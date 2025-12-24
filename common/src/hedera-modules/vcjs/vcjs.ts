@@ -1,4 +1,4 @@
-import Ajv from 'ajv';
+import { Ajv } from 'ajv';
 import addFormats from 'ajv-formats';
 import { ld as vcjs } from '@transmute/vc.js';
 import { Ed25519Signature2018, Ed25519VerificationKey2018 } from '@transmute/ed25519-signature-2018';
@@ -258,7 +258,7 @@ export class VCJS {
         const ajv = new Ajv({
             loadSchema: this.loadSchema
         });
-        addFormats(ajv);
+        addFormats.default(ajv);
 
         this.prepareSchema(schema);
 
@@ -337,7 +337,7 @@ export class VCJS {
         const ajv = new Ajv({
             loadSchema: this.loadSchema
         });
-        addFormats(ajv);
+        addFormats.default(ajv);
 
         this.prepareSchema(schema);
 
