@@ -15,7 +15,6 @@
         "@nestjs/microservices": "11.1.11",
         "axios": "1.12.0",
         "base-x": "^4.0.0",
-        "base64url": "^3.0.1",
         "cron": "^2.4.0",
         "dotenv": "^16.0.0",
         "express": "^5.1.0",
